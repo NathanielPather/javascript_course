@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Character Set -->
+        <meta charset=utf8>
+<!-- Import Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- Webpage Title -->
+        <title>Sports Album</title>
+    </head>
+<!-- Header -->
+    <header>
+        <div id='title'>My Sports Album</div>
+    </header>
+<!-- Flexbox Container Setup -->
+<!-- https://i.gyazo.com/ff7dad1b926c6492429fb4def7c57016.png -->
+<!-- Container 1 --> 
+    <main>
+<!-- Container 2 -->
+        <div id="con-2">
+<!-- Column 1 -->
+            <div id="col-1">
+<!-- Navbar -->
+                <nav>
+                    <h1>
+                        Categories
+                    </h1>
+<!-- Navbar Categories -->
+                    <ul>
+                        <li><a href="" id="tennis-btn">Tennis</a></li>
+                        <li><a href="#" id="football-btn">Football</a></li>
+                        <li><a href="#" id="swimming-btn">Swimming</a></li>
+                    </ul>
+                </nav>
+            </div>
+<!-- Column 2 --> 
+            <div id="col-2">
+                <p>Select a category to view some photos!</p>
+            </div>
+        </div>
+<!-- Container 3 -->
+        <div id="con-3">
+<!-- Column 3 --> 
+            <div id="col-3">
+                <p>No recent photos yet!</p>
+            </div>
+        </div>
+    </main>
+    <body>
+<!-- Import Jquery Content Delivery Network (CDN) -->
+<!-- CDNs allow users to access files from closer locations to reduce load times --> 
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Import Javascript -->
+        <script src="js/main.js"></script>
+<!-- Modal -->
+        <div id="modal-container">
+            <span id="modal-close">&times;</span>
+            <img id="modal-content">
+            <div id="modal-caption"></div>
+            <div id="modal-comments"></div>
+        </div>
+<!-- Footer -->
+        <footer>
+            <span id="author">By Nathaniel Pather</span>
+        </footer>
+    </body>
+</html>

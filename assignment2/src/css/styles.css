@@ -1,0 +1,163 @@
+main {
+/* Use flexbox */
+    display: flex;
+/* Display flex assigned elements in a column */
+    flex-direction: column;
+}
+
+#intro {
+    font: 20px;
+    color: blue;
+}
+
+#con-2 {
+/* Flex is a short-hand property for other flex elements. */
+/* 6 number specifies the flex-grow property */
+/* Specifies how much the flex assigned element will grow relative to other flex assigned elements */
+/* Grows six times larger than container 3 */
+    flex: 6;
+    display: flex;
+/* Display flex assigned elements in a row */
+    flex-direction: row;
+}
+
+/* Container 3 contains column 3 */
+#con-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#col-1 {
+    flex: 1;
+    border: 2px solid blue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#col-2 {
+    flex: 6;
+/* Flex items are positioned at the center of the column  */
+    justify-content: center;
+    display: flex;
+/* Specifies flex elements within this column will wrap */
+    flex-wrap: wrap;
+    border: 2px solid red;
+}
+
+#col-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid green;
+}
+
+/* Responsive layout */
+/* When the screens minimum width is 1042px  or above */
+@media all and (min-width: 1042px) {
+    main {
+/* All containers in container 1 are displayed in a row */
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* When the screens width is between 768px - 1042px */
+@media all and (min-width: 768px) and (max-width: 1042px) {
+    main {
+        display: flex;
+/* All containers in container 1 are displayed in a column */
+        flex-direction: column;
+    }
+}
+
+/* When the screens maximum width is 767px */
+@media all and (max-width: 767px) {
+    main {
+        display: flex;
+/* All containers in container 1 are displayed in a column */
+        flex-direction: column;
+    }
+    
+    #con-2 {
+/* All containers in container 2 are displayed in a column */
+        flex-direction: column;
+    }
+}
+
+#search-btn {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+}
+
+#search-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#share-btn {
+    background-color: #008CBA;
+    color: white; 
+    border: 2px solid #008CBA;
+}
+
+#share-btn:hover {
+    background-color: white; 
+    color: black;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 50%;
+}
+
+#design-btn {
+    background-color: #4CAF50;
+    color: white; 
+    border: 2px solid #4CAF50;
+}
+
+#design-btn:hover {
+    background-color: white; 
+    color: black;
+}
+
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+form {
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    text-align: right;
+}

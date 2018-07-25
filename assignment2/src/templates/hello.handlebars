@@ -1,0 +1,18 @@
+<div style="padding: 40px">
+    <table bgcolor="#a3cfec">
+        <tr>
+            <th>Player Name</th><th>Team</th>
+        </tr>
+        {{#each categories}}
+            {{ log this.playerName }}
+            <tr>
+                <td>
+                    {{this.playerName}}
+                </td>
+                <td>
+                    {{this.team}}
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</div>

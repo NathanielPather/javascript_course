@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf8>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <title>Photo Album</title>
+    </head>
+    
+    <header>
+        <div></div>
+        <div id='title'>My Photo Album</div>
+        <div><button id="button" type="button">Login</button></div>
+    </header>
+    
+    <main>
+        <div id="col-1">
+            <nav>
+                <h1>
+                    Categories
+                </h1>
+                
+                <ul style="list-style-type:none" id="list">
+                    <li><a href="">General</a></li>
+                    <li><a href="">Nature</a></li>
+                    <li><a href="">Macro</a></li>
+                    <li><a href="">Portrait</a></li>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">Astrography</a></li>
+                </ul>
+            </nav>
+            
+            <form>
+                <input id="search-input" type="text">
+                <button type="button" id="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <div id="photos">
+        </div>
+    </main>
+    
+    <body>
+        <footer>
+            <span id="author">By Nathaniel Pather</span>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

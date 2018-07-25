@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Webpack App</title>
+    </head>
+    <header>
+        <div id="fb-root"></div>
+        <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
+    </header>
+    <!-- Container 1 --> 
+    <main>
+<!-- Container 2 -->
+        <div id="con-2">
+<!-- Column 1 -->
+            <div id="col-1">
+<!-- Navbar -->
+            <form>
+                <input id="search-input" type="text" placeholder="Name">
+                <button type="button" id="search-btn" class="button">Search</button>
+                <button type="button" id="share-btn" class="button">Share</button>
+                <button type="button" id="design-btn" class="button" onclick="window.location.href = '/../exercises/assignment2/src/design.html'">Design</button>
+            </form>
+            
+            </div>
+<!-- Column 2 --> 
+            <div id="col-2">
+            </div>
+        </div>
+    </main>
+    <body>
+<!-- Description --> 
+        <div id='hello' style="text-align: center">
+            <p>
+                Welcome to my website.<br>
+                This web app allows users to grab match information of requested player from the online game League of Legends.<br>
+                The riot api is used to search for a player by name, returning a response of account related information.<br>
+                The account id is grabbed from this and used to search for the accounts recently played matches.<br>
+                Each match contains a match id. When searched for, all match information is provided for the specified match.<br>
+                Match information includes: players, teams, winning team, etc.<br>
+                The facebook api is also used, allowing user authentication of the facebook account.<br>
+                Users are able to share a facebook status.<br>
+            </p>
+        </div>
+    <script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
